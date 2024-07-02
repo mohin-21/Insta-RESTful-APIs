@@ -1,0 +1,28 @@
+.post{
+    background-color:gainsboro;
+    width: 70%;
+    margin: 0.2em;
+}
+
+img{
+    width: 45%;
+}
+
+.user{
+    font-weight: 500;
+    font-style:normal;
+}
+
+.head{
+    padding:0.1rem;
+    
+}
+
+button{
+    font-size: 85%;
+    border-radius:0.3em;
+}
+
+.f-count{
+    display: flex;
+}

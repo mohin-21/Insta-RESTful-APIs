@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Post Details</h1>
+
+    <div>
+        <header class="head">
+           <p>post id: <%=post.id%></p>
+           <p class="user">user: @<%=post.user%></p>
+           <button>Follow</button>
+           <button>Message</button>
+           
+           <div class="f-count">
+            <p>xxx posts </p>
+            &nbsp; &nbsp;
+            <p>xxx followers </p>
+            &nbsp; &nbsp;
+            <p>xxxx following</p>
+           </div>
+       </header>
+       
+        <img src=<%=post.url%> alt="image">
+        <p>caption: <%=post.caption%></p>
+    
+      
+    </div>
+    
+</body>
+</html>

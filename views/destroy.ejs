@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destroy Route</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Wanna romove the post??</h1>
+
+    <p>post id: <%=post.id%></p>
+    <p class="user">user: @<%=post.user%></p>
+    <img src=<%=post.url%> alt="image">
+    <p>caption: <%=post.caption%></p>
+
+    <form action="http://localhost:8080/home" method="get">
+               
+        <button>No</button>         
+    </form>
+
+    <form action="/home/<%=post.id%>?_method=DELETE" method="post">
+               
+        <button>Yes</button>         
+    </form>
+</body>
+</html>
